@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/backgroundColor">
+
+    <LinearLayout
+        android:id="@+id/positionsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+        <TextView
+            android:id="@+id/electionTitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Election"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#000000"/>   <!-- solid black -->
+
+
+        <!-- Submit Vote Button -->
+        <Button
+            android:id="@+id/btnSubmitVote"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Submit Vote"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/primaryColor"
+            android:layout_marginTop="32dp"
+            android:elevation="4dp"/>
+
+    </LinearLayout>
+</ScrollView>

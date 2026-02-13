@@ -1,0 +1,15 @@
+<resources>
+    <color name="white">#FFFFFF</color>
+    <color name="shock_purple_500">#6B46C1</color> <!-- a nice purple -->
+    <color name="purple_500">#6200EE</color> <!-- optional alternative -->
+    <color name="primaryColor">#1E3A8A</color>
+    <color name="accentColor">#F59E0B</color>
+    <color name="secondaryColor">#FFC107</color> <!-- yellow/orange -->
+    <color name="backgroundColor">#FFFFFF</color> <!-- white background -->
+    <color name="textDark">#000000</color> <!-- black text -->
+    <color name="textPrimary">#212121</color>        <!-- Dark text for general use -->
+    <color name="textSecondary">#757575</color>      <!-- Grey for subtitles / hints -->
+    <color name="tertiaryColor">#4CAF50</color>       <!-- Green / manage elections -->
+    <color name="darkRed">#D32F2F</color>            <!-- Red / logout or destructive actions -->
+    <color name="textBlack">#000000</color>
+</resources>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/backgroundColor">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Election Title Label -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Election Title"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/primaryColor"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Election Title Input -->
+        <EditText
+            android:id="@+id/titleInput"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Enter Election Title"
+            android:textColor="@color/textBlack"
+            android:padding="12dp"
+            android:background="@drawable/edittext_background"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Buttons: Create & Update Title -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:weightSum="2"
+            android:layout_marginBottom="24dp">
+
+            <Button
+                android:id="@+id/createTitleBtn"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="Create Title"
+                android:textColor="@android:color/white"
+                android:backgroundTint="@color/primaryColor"
+                android:layout_marginEnd="8dp"
+                android:elevation="4dp"/>
+
+            <Button
+                android:id="@+id/updateTitleBtn"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="Update Title"
+                android:textColor="@android:color/white"
+                android:backgroundTint="@color/secondaryColor"
+                android:layout_marginStart="8dp"
+                android:elevation="4dp"/>
+        </LinearLayout>
+
+        <!-- Position Selection Label -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Position"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/primaryColor"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Radio Buttons for Positions -->
+        <RadioGroup
+            android:id="@+id/positionRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="24dp">
+
+            <RadioButton
+                android:id="@+id/rbChairperson"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chairperson"
+                android:textSize="18sp"
+                android:textColor="@color/textPrimary"/>
+
+            <RadioButton
+                android:id="@+id/rbSecretary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Secretary"
+                android:textSize="18sp"
+                android:textColor="@color/textPrimary"/>
+
+            <RadioButton
+                android:id="@+id/rbTreasurer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Treasurer"
+                android:textSize="18sp"
+                android:textColor="@color/textPrimary"/>
+        </RadioGroup>
+
+        <!-- Candidate Name Input -->
+        <EditText
+            android:id="@+id/candidateNameInput"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Candidate Name"
+            android:textColor="@color/textBlack"
+            android:padding="12dp"
+            android:background="@drawable/edittext_background"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Candidate Image URL Input -->
+        <EditText
+            android:id="@+id/candidateImageUrlInput"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Candidate Image URL"
+            android:textColor="@color/textBlack"
+            android:padding="12dp"
+            android:background="@drawable/edittext_background"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Buttons: Add Candidate & Done -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:weightSum="2"
+            android:layout_marginBottom="24dp">
+
+            <Button
+                android:id="@+id/addCandidateBtn"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="Add Candidate"
+                android:textColor="@android:color/white"
+                android:backgroundTint="@color/primaryColor"
+                android:layout_marginEnd="8dp"
+                android:elevation="4dp"/>
+
+            <Button
+                android:id="@+id/doneBtn"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="Done"
+                android:textColor="@android:color/white"
+                android:backgroundTint="@color/secondaryColor"
+                android:layout_marginStart="8dp"
+                android:elevation="4dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="32dp"
+    android:background="@color/backgroundColor">
+
+    <!-- Welcome Text -->
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to KCA Voting System"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/textBlack"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Login Button -->
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Already have an account?"
+        android:textSize="18sp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/primaryColor"
+        android:textColor="@android:color/white"/>
+
+    <!-- Register Button -->
+    <Button
+        android:id="@+id/registerBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create an account"
+        android:textSize="18sp"
+        android:backgroundTint="@color/secondaryColor"
+        android:textColor="@android:color/white"/>
+</LinearLayout>

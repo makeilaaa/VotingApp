@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        tools:ignore="ExtraText">
+
+        <!-- Logo -->
+        <ImageView
+            android:id="@+id/loginLogo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@mipmap/ic_launcher"/> <!-- Keep your existing PNG -->
+
+        <!-- Registration Number -->
+        <EditText
+            android:id="@+id/registrationNumberInput"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="text"
+            android:textColor="@color/textBlack"
+            android:hint="Registration Number"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/primaryColor"/>
+
+        <!-- Password -->
+        <EditText
+            android:id="@+id/passwordInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColor="@color/textBlack"
+            android:padding="12dp"
+            android:layout_marginBottom="24dp"
+            android:backgroundTint="@color/primaryColor"/>
+
+        <!-- Login Button -->
+        <Button
+            android:id="@+id/loginBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/primaryColor"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Go to Register Button -->
+        <Button
+            android:id="@+id/goToRegisterBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create an Account"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/secondaryColor"/>
+    </LinearLayout>
+</ScrollView>
