@@ -1,2 +1,19 @@
+# Gradle build folders
 /build
+/app/build
+
+# Local configuration
+/local.properties
+
+# Android Studio
+/.idea
+*.iml
+
+# Log files
+*.log
+
+# Firebase config
 app/google-services.json
+
+# Others
+*.keystore
